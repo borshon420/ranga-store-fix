@@ -14,7 +14,7 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
-      <div>
+      <div class="single-image">
     <img class="product-image" src=${product.image}></img>
       </div>
       <h3>${product.title}</h3>

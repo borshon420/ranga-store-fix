@@ -1,7 +1,9 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  background-color: black;
 }
+
 /* header part */
 header {
   margin-left: 44%;
@@ -10,6 +12,7 @@ header {
 
 .header-font {
   font-weight: bold;
+  color: white;
 }
 /* search field and search button part */
 .search {
@@ -19,7 +22,7 @@ header {
 }
 
 .form {
-  border: 1px solid #FF4C29;
+  border: 2px solid #FF4C29;
   width: 400px;
   padding: 10px;
   border-radius: 5px;
@@ -27,10 +30,11 @@ header {
 
 .search-btn {
   padding: 10px 20px;
-  border: 1px solid #334756;
+  border: 2px solid #FF4C29;
   border-radius: 5px;
   background-color: #334756;
   color: white;
+  font-weight: bold;
 }
 
 /* product card part */
@@ -42,10 +46,14 @@ header {
   margin: auto;
   align-items: center;
   justify-content: center;
+
 }
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #FF4C29; 
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px #FF4C29;
@@ -55,14 +63,27 @@ header {
 .product-image {
   width: 150px;
   height: 150px;
+  padding: 20px 0px;
+}
+.single-image {
+  background-color: white;
+  border-radius: 5px;
 }
 .cart {
   width: 350px;
   padding: 10px;
-  box-shadow: 10px 10px 20px #334756;
+  box-shadow: 10px 10px 20px #FF4C29;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+  color: white;
+  border: 1px solid #FF4C29;
+}
+
+.cart:hover {
+  box-shadow: 4px 4px 7px #FF4C29;
+  border-radius: 10px;
+  border: 1px solid #FF4C29;
 }
 .cart-main {
   padding-right: 30px;
@@ -93,9 +114,8 @@ header {
 
 .single-product {
   height: 500px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-left: 30px;
 }
 /* add to cart and details button part */
 .buy-now {
@@ -120,6 +140,7 @@ header {
   border-radius: 5px;
   background-color: #334756;
   color: white;
+  border: 1px solid #FF4C29;
 }
 
 /* rating count part */
