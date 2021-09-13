@@ -53,7 +53,9 @@ const updatePrice = (id, value) => {
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
   document.getElementById(id).innerText = parseFloat(total).toFixed(2);
+  updateTaxAndCharge()
   updateTotal()
+  
 };
 
 // set innerText function
