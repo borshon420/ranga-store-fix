@@ -2,6 +2,16 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* header part */
+header {
+  margin-left: 44%;
+  margin-top: 50px;
+}
+
+.header-font {
+  font-weight: bold;
+}
+/* search field and search button part */
 .search {
   margin-left: 38%;
   margin-top: 20px;
@@ -9,32 +19,24 @@ body {
 }
 
 .form {
-  border: 1px solid #449D44;
+  border: 1px solid #FF4C29;
   width: 400px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .search-btn {
   padding: 10px 20px;
-  border: 1px solid #449D44;
-  border-radius: 10px;
+  border: 1px solid #334756;
+  border-radius: 5px;
+  background-color: #334756;
+  color: white;
 }
 
-
-header {
-  margin-left: 46%;
-  margin-top: 50px;
-}
-
-.font-weight {
-  font-weight: bold;
-}
-
+/* product card part */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
   text-align: center;
   width: 100%;
   margin: auto;
@@ -46,9 +48,9 @@ header {
   transition: 0.6s;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 4px 4px 7px #FF4C29;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid #FF4C29;
 }
 .product-image {
   width: 150px;
@@ -56,9 +58,8 @@ header {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 20px #334756;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
@@ -73,7 +74,6 @@ header {
   }
   .cart {
     width: 300px;
-    /* border: 1px solid green; */
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
@@ -97,7 +97,32 @@ header {
   margin-right: 10px;
   margin-left: 10px;
 }
+/* add to cart and details button part */
+.buy-now {
+  background-color: #FF4C29;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
 
+.btn-details {
+  background-color: #334756;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.btn-buy-now {
+  padding: 8px 20px;
+  border: 1px solid #334756;
+  border-radius: 5px;
+  background-color: #334756;
+  color: white;
+}
+
+/* rating count part */
 .rating-count {
   margin-top: 10px;
   font-size: 16px;
@@ -116,4 +141,4 @@ header {
   color: #AEAEAE;
 }
 
-/* ---------------------- */
+
